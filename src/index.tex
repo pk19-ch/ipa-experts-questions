@@ -9,7 +9,7 @@
 \newcommand{\varAuthor}{Robin Bühler}
 \newcommand{\varCompany}{} % Firmenname
 \newcommand{\varTitle}{Expertenformular: Fachgespräch}
-\newcommand{\varVersion}{Version 2023.3}
+\newcommand{\varVersion}{Version 2025.1}
 
 % footer and headings
 \rohead[\varTitle]{\varTitle}
@@ -26,9 +26,11 @@
   \\
   \sbox\TBox{Arbeitstitel: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Arbeitstitel:}
   \sbox\TBox{Kandidat: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Kandidat:}
+  \sbox\TBox{ver.Fachkraft: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{ver.Fachkraft:}
   \sbox\TBox{Hauptexperte: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Hauptexperte:}
   \sbox\TBox{Nebenexperte: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Nebenexperte:}
   \input{sections/introduction}
+  \newpage
   \begin{questionitem}{eins}
     Erstes Gesprächsthema des Fachgesprächs.
   \end{questionitem}
@@ -52,12 +54,6 @@
   \end{questionitem}
   \begin{questionitem}{acht}
     Achtes Gesprächsthema des Fachgesprächs.
-  \end{questionitem}
-  \begin{questionitem}{neun}
-    Neuntes Gesprächsthema des Fachgesprächs.
-  \end{questionitem}
-  \begin{questionitem}{zehn}
-    Zehntes Gesprächsthema des Fachgesprächs.
   \end{questionitem}
 \end{Form}
 \end{document}
