@@ -14,5 +14,5 @@ This is an opinionated template to give you a kick start into writing a LaTeX do
  5. Go to the terminal ![terminal](doc/terminal.PNG)
  6. Type Tectonic command to build ![build](doc/build.PNG)
  7. See result in build/default folder ![result](doc/result.PNG)
- 8. Click on left corner  ![open remote window](doc/OpenRemoteWindow.PNG) "Open remote window"
+ 8. Click on left bottom corner  ![open remote window](doc/OpenRemoteWindow.PNG) "Open remote window"
  9. Close remote connection ![close remote connection](doc/close.PNG)
