@@ -9,8 +9,8 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
-      - uses: actions/cache@v3
+        uses: actions/checkout@v4
+      - uses: actions/cache@v4
         name: Setup Tectonic cache
         with:
           path: ~/.cache/Tectonic
@@ -24,7 +24,7 @@ jobs:
       - name: Run Tectonic and Biber
         run: tectonic -X build
       - name: Upload pdf
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Document
           path: build/default/default.pdf
