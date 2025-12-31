@@ -1,5 +1,9 @@
 \section{Einleitung}
 
+% Unterdrücke Underfull hbox Warnungen für diese Sektion
+\hbadness=10000
+\vbadness=10000
+
 Dieses Formular dient zur Vorbereitung und Durchführung von IPA Fachgesprächen.
 
 \begin{itemize}
@@ -10,22 +14,42 @@ Dieses Formular dient zur Vorbereitung und Durchführung von IPA Fachgesprächen
 
 Ein Fachgespräch dient dazu Themen und Inhalte aus der vorliegenden IPA zu vertiefen, zu prüfen und Unklarheiten auszuräumen:
 
+{\raggedright
 \begin{itemize}
-  \item Im Fachgespräch sollen \textbf{keine} Fragen gestellt werden, welche \textbf{auswendig gelerntes Wissen abfragen}, sondern auf das fachmännische Handeln abzielen, sowie das gezielte Vorgehen des Kandidaten begründen.
+  \item Im Fachgespräch sollen \textbf{keine} Fragen gestellt werden, welche \textbf{auswendig gelerntes Wissen abfragen}, sondern auf das fachmännische Handeln sowie auf das reflektierte Begründen des gewählten Vorgehens abzielen.
   \begin{itemize}
-    \item[\ding{51}] Wie sind Sie vorgegangen, um den im Bericht auf Seite 21 gezeigten regulären Ausdruck (Regular Expression, RegEx), zu entwickeln? Wie funktioniert dieser? Wie haben Sie den regulären Ausdruck getestet?
-    \item[\ding{55}] Was bedeutet \texttt{\char`\\W} in einem regulären Ausdruck? Von wem wurden reguläre Ausdrücke erfunden? Seit wann gibt es reguläre Ausdrücke? Welche Namen gibt es noch für reguläre Ausdrücke?
-    \item[\ding{55}] Welche Schichten gibt es im OSI-Modell? Welche Phasen hat IPERKA? Welche HTML-Elemente kennen Sie? Welche Netzwerkgerätetypen gibt es?
+    \item[\ding{51}] Wie sind Sie vorgegangen, um den im Bericht auf Seite 21 gezeigten regulären Ausdruck (Regular Expression, RegEx) zu entwickeln?
+    
+      Wie funktioniert dieser? Wie haben Sie den regulären Ausdruck getestet?
+    \item[\ding{55}] Was bedeutet \texttt{\char`\\W} in einem regulären Ausdruck?
+    
+      Von wem wurden reguläre Ausdrücke erfunden? Seit wann gibt es reguläre Ausdrücke? Welche Namen gibt es noch für reguläre Ausdrücke?
+    \item[\ding{55}] Welche Schichten gibt es im OSI-Modell? Welche Phasen hat IPERKA?
+    
+      Welche HTML-Elemente kennen Sie? Welche Netzwerkgerätetypen gibt es?
   \end{itemize}
-  \item \textbf{Hypothetische oder kontextfremde Fragen} sollten \textbf{vermieden} oder am Ende eines Fragenkomplexes gestellt werden, da damit oft die Gefahr besteht, vom Niveau zu schwierig oder zu umfangreich zu sein.
+  \item \textbf{Hypothetische oder kontext-fremde Fragen} sollten \textbf{vermieden} oder am Ende eines Fragenkomplexes gestellt werden, da damit oft die Gefahr besteht, vom Niveau zu schwierig oder zu umfangreich zu sein.
   \begin{itemize}
-    \item[\ding{51}] Was passiert, falls im auf Seite 32 gezeigten Suchfeld die Zeichenkette \texttt{\char`\"\ UNION DROP DATABASE kunden;} eingegeben wird? Wie könnte dieses Problem verhindert werden?
-    \item[\ding{55}] Stellen Sie sich vor, die Software wird von einer Hackergruppe angegriffen. Wie schützen Sie die Applikation vor so einem Angriff?
-    \item[\ding{55}] Sie haben IPERKA fürs Projektmanagement eingesetzt. Was würde sich verändern, falls Sie HERMES einsetzen müssten?
+    \item[\ding{51}] Was passiert, falls im auf Seite 32 gezeigten Suchfeld die folgende Zeichenkette eingegeben wird:
+    
+    \texttt{\char`\"\space UNION DROP DATABASE kunden;}
+    
+      Wie könnte dieses Problem verhindert werden?
+    \item[\ding{55}] Stellen Sie sich vor, die Software wird von einer Hackergruppe angegriffen.
+    
+      Wie schützen Sie die Applikation vor so einem Angriff?
+    \item[\ding{55}] Sie haben IPERKA fürs Projektmanagement eingesetzt.
+    
+      Was würde sich verändern, falls Sie HERMES einsetzen müssten?
   \end{itemize}
   \item Der \textbf{Schwierigkeitsgrad} soll an den angestrebten Abschluss \textbf{angepasst} sein und es soll keine gute Portion Glück notwendig sein, um eine Antwort zu finden.
   \begin{itemize}
-    \item[\ding{51}] Um das Passwort nicht als Klartext speichern zu müssen, setzten Sie \enquote{bcrypt} ein. Was tut diese Funktion mit dem eingegebenen Passwort? Wie kann nun überprüft werden, ob der Benutzer bei einem Login das richtige Passwort eingegeben hat?
-    \item[\ding{55}] Laut der Aufgabenstellung sollten Sie die Passwörter nicht im Klartext speichern. Dafür haben Sie das Verfahren \enquote{bcrypt} eingesetzt. Was macht \enquote{bcrypt} sicherer als \enquote{md5} und \enquote{sha1}?
+    \item[\ding{51}] Um das Passwort nicht als Klartext speichern zu müssen, setzten Sie \enquote{bcrypt} ein.
+    
+      Was tut diese Funktion mit dem eingegebenen Passwort? Wie kann nun überprüft werden, ob der Benutzer bei einem Login das richtige Passwort eingegeben hat?
+    \item[\ding{55}] Laut der Aufgabenstellung sollten Sie die Passwörter nicht im Klartext speichern. Dafür haben Sie das Verfahren \enquote{bcrypt} eingesetzt.
+    
+      Was macht \enquote{bcrypt} sicherer als \enquote{md5} und \enquote{sha1}?
   \end{itemize}
 \end{itemize}
+}

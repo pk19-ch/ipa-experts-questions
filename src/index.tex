@@ -6,10 +6,10 @@
 \usepackage{../lib/pk}
 
 % set variables
-\newcommand{\varAuthor}{Robin Bühler}
+\newcommand{\varAuthor}{Robin Bühler, ergänzt Peter Rutschmann}
 \newcommand{\varCompany}{} % Firmenname
 \newcommand{\varTitle}{Expertenformular: Fachgespräch}
-\newcommand{\varVersion}{Version 2025.1}
+\newcommand{\varVersion}{Version 2026.1}
 
 % footer and headings
 \rohead[\varTitle]{\varTitle}
@@ -22,13 +22,16 @@
 \begin{document}
 \begin{Form}
   \chapter{\varTitle}
-  Bei geschlechterspezifischen Personenbezeichnungen sind immer alle Geschlechter gemeint.\\
-  \\
-  \sbox\TBox{Arbeitstitel: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Arbeitstitel:}
-  \sbox\TBox{Kandidat: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Kandidat:}
-  \sbox\TBox{ver.Fachkraft: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{ver.Fachkraft:}
-  \sbox\TBox{Hauptexperte: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Hauptexperte:}
-  \sbox\TBox{Nebenexperte: }\TextField[charsize=10pt, width=\dimexpr\linewidth-\wd\TBox]{Nebenexperte:}
+  % Bestimme die Breite des längsten Labels für einheitliche Feldbreiten
+  \sbox\TBox{Nebenexperte*in:}
+  \newlength{\fieldlabelwidth}
+  \setlength{\fieldlabelwidth}{\dimexpr\wd\TBox+5pt}
+  
+  \makebox[\fieldlabelwidth][l]{IPA-Arbeitstitel:}\TextField[charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
+  \makebox[\fieldlabelwidth][l]{Kandidat*in:}\TextField[charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
+  \makebox[\fieldlabelwidth][l]{VF:}\TextField[charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
+  \makebox[\fieldlabelwidth][l]{HEX:}\TextField[charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
+  \makebox[\fieldlabelwidth][l]{NEX:}\TextField[charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
   \input{sections/introduction}
   \newpage
   \begin{questionitem}{eins}
