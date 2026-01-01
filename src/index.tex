@@ -27,11 +27,11 @@
   \newlength{\fieldlabelwidth}
   \setlength{\fieldlabelwidth}{\dimexpr\wd\TBox+5pt}
   
-  \makebox[\fieldlabelwidth][l]{IPA-Arbeitstitel:}\TextField[charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
-  \makebox[\fieldlabelwidth][l]{Kandidat*in:}\TextField[charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
-  \makebox[\fieldlabelwidth][l]{VF:}\TextField[charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
-  \makebox[\fieldlabelwidth][l]{HEX:}\TextField[charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
-  \makebox[\fieldlabelwidth][l]{NEX:}\TextField[charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
+  \makebox[\fieldlabelwidth][l]{IPA-Arbeitstitel:}\TextField[name=arbeitstitel, charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
+  \makebox[\fieldlabelwidth][l]{Kandidat*in:}\TextField[name=kandidat, charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
+  \makebox[\fieldlabelwidth][l]{VF:}\TextField[name=vf, charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
+  \makebox[\fieldlabelwidth][l]{HEX:}\TextField[name=hex, charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
+  \makebox[\fieldlabelwidth][l]{NEX:}\TextField[name=nex, charsize=10pt, width=\dimexpr\linewidth-\fieldlabelwidth-5pt]{}\\
   \input{sections/introduction}
   \newpage
   \begin{questionitem}{eins}
